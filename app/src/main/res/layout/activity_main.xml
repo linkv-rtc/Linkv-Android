@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="286dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="147dp"
+        android:background="@mipmap/logo_ico"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/btn_play_live"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="24dp"
+        android:background="#11CDA8"
+        android:gravity="center"
+        android:text="@string/start_streaming"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btn_watch_live"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="24dp"
+        android:background="#11CDA8"
+        android:gravity="center"
+        android:text="@string/look_streaming"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="42dp"
+        android:text="@string/setting"
+        android:textColor="#B5B5B5"
+        android:textSize="16sp" />
+
+    <include layout="@layout/layout_switch_live" />
+
+</FrameLayout>

@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+
+bugly {
+    appId = "9bc3cb06ef"
+    appKey = "0bed2dc7-0398-45cf-b859-c5988d7360a0"
+    debug = true
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('../jks/linkv_key_store.jks')
+            storePassword 'linkv2020'
+            keyAlias = 'LinkV'
+            keyPassword 'linkv2020'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion "28.0.1"
+    defaultConfig {
+        applicationId "com.linkv.live"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            minifyEnabled true  // 开启混淆，打包删除无用代码
+            shrinkResources true    // 开启删除没有被引用的文件
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res']
+            jniLibs.srcDirs = ['libs']
+            jni.srcDirs = [] // This prevents the auto generation of Android.mk
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    compile(name: 'linkv', ext: 'aar')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.tencent.bugly:crashreport:3.3.92'
+    implementation 'com.tencent.bugly:nativecrashreport:3.9.1'
+}

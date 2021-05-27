@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E1E1"
+    android:orientation="vertical"
+    tools:context=".activity.RoomListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:paddingStart="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:onClick="goBack"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:src="@mipmap/return_black_ico" />
+
+        <TextView
+            android:id="@+id/tv_room_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:shadowColor="#4d000000"
+            android:shadowRadius="3.0"
+            android:text="@string/room_list"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="@mipmap/refresh_ico"
+            android:drawablePadding="5dp"
+            android:gravity="end"
+            android:onClick="updateList"
+            android:text="@string/refresh"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_room_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99f5f6f6"
+        android:numColumns="2"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp" />
+
+</LinearLayout>

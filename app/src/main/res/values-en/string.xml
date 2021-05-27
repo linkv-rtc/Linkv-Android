@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LinkV</string>
+
+    <string name="start_streaming">Start Streaming</string>
+    <string name="look_streaming">Look Streaming</string>
+    <string name="streaming_type">Choose an AV streaming type</string>
+    <string name="mention">you can\'t change streaming type in live streaming</string>
+    <string name="normal_streaming">Live streaming</string>
+    <string name="conference">AV Conference</string>
+    <string name="audio_mode">Audio Conference</string>
+    <string name="screen_sharing">Screen Sharing</string>
+    <string name="cancel">Cancel</string>
+    <string name="network_error">The network is abnormal, please check the device connection</string>
+    <string name="start_living">Start</string>
+    <string name="user_id">UserID:</string>
+    <string name="person_surpass">Only four people are supported in live streaming</string>
+    <string name="send_sei">Send SEI</string>
+    <string name="receive_sei">Receive SEI:</string>
+    <string name="resolution_adaptation">Resolution adaptation</string>
+    <string name="degradation_disable">Disabled</string>
+    <string name="degradation_maintain_framerate">Maintain Framerate</string>
+    <string name="degradation_maintain_resolution">Maintain Resolution</string>
+    <string name="video_parameter">Video Parameter</string>
+    <string name="video_angle">Video Angle</string>
+    <string name="accompaniment_demo">Accompaniment demo</string>
+    <string name="external_audio_input">External Audio Input</string>
+    <string name="join_room_setting">Please set before joining the room</string>
+    <string name="accompaniment_demo_mention">The accompaniment function can only be turned on after the audio and video are published</string>
+    <string name="degree0">0 degrees</string>
+    <string name="degree90">90 degrees</string>
+    <string name="degree180">180 degrees</string>
+    <string name="degree270">270 degrees</string>
+
+    <string name="send_only">Send only</string>
+    <string name="playout_only">Playout only</string>
+    <string name="send_and_playout">Send and playout</string>
+    <string name="replace_mic">Replace Microphone</string>
+    <string name="replace_mic_and_send_only">Replace mic and send only</string>
+
+    <string name="app_name2">App Name</string>
+    <string name="setting_version">VERSION</string>
+    <string name="setting_environment">ENVIRONMENT</string>
+    <string name="setting_about">ABOUT</string>
+    <string name="setting_app_environment">App Environment</string>
+    <string name="setting_app_type">App Type</string>
+    <string name="setting_3a_mode">Open sw 3A</string>
+    <string name="setting_other">Other</string>
+    <string name="setting_texture">Texture</string>
+
+    <string name="setting_prudtion">Production</string>
+    <string name="setting_test">Test</string>
+
+    <string name="app_type">App Type</string>
+    <string name="app_type_china">China</string>
+    <string name="app_type_international">International</string>
+
+    <string name="av_environment_setting">Streaming Environment Setting</string>
+    <string name="setting_default_environment">Prodution environment are used by default</string>
+    <string name="setting_default_app_type">System language setting are used by default</string>
+    <string name="copy_to_clipboard">Copied to clipboard</string>
+    <string name="volume_control_play">Play</string>
+    <string name="volume_control_pause">Pause</string>
+    <string name="setting">Setting</string>
+    <string name="volume">Volume: </string>
+    <string name="room_list">roomList</string>
+    <string name="refresh">refresh</string>
+    <string name="enter">enter</string>
+    <string name="resolution">resolution</string>
+    <string name="fps">fps</string>
+    <string name="bitrate">bitrate</string>
+    <string name="ok">OK</string>
+    <string name="error_code">code: </string>
+    <string name="try_later">Please try later</string>
+
+    <string name="login_success">login success</string>
+    <string name="login_failed">login error</string>
+    <string name="member_limited">Maximum number of calls reached</string>
+    <string name="me">Me</string>
+    <string name="host">Host</string>
+    <string name="uid">userId</string>
+    <string name="video_lost">video lost</string>
+    <string name="audio_lost">audio lost</string>
+    <string name="video_bitrate">video bitrate</string>
+    <string name="audio_bitrate">audio bitrate</string>
+    <string name="quality">Statistic View</string>
+    <string name="beauty">Beauty level</string>
+    <string name="bright">Bright level</string>
+    <string name="tone">Tone level</string>
+
+    <string name="texture_adjust">auto adjust</string>
+    <string name="texture_on">texture off</string>
+    <string name="texture_off">texture on</string>
+
+</resources>

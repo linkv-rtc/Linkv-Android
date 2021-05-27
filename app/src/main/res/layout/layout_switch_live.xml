@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_switch_live"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_common_live"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shage_card_corner"
+        android:gravity="center"
+        android:text="@string/normal_streaming"
+        android:textColor="#ff3f3f3f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_meeting_live"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f2ffffff"
+        android:gravity="center"
+        android:text="@string/conference"
+        android:textColor="#ff3f3f3f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_audio_live"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f2ffffff"
+        android:gravity="center"
+        android:text="@string/audio_mode"
+        android:textColor="#ff3f3f3f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_screen_sharing"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f2ffffff"
+        android:gravity="center"
+        android:text="@string/screen_sharing"
+        android:textColor="#ff3f3f3f"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_switch_live"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#11FFFFFF" />
+
+</LinearLayout>

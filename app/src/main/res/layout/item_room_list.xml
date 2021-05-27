@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp">
+
+    <Button
+        android:id="@+id/btn_enter_live"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/shape_btn_enter"
+        android:gravity="center"
+        android:text="@string/enter"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_room_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="113131312"
+        android:textColor="#3F3F3F"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="#E2E2E2" />
+
+</FrameLayout>

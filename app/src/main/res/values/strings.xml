@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">LinkV</string>
+    <string name="start_streaming">我要开播</string>
+    <string name="look_streaming">观看直播</string>
+    <string name="streaming_type">选择音视频直播类型</string>
+    <string name="mention">直播过程中不允许修改直播类型</string>
+    <string name="normal_streaming">普通直播</string>
+    <string name="conference">会议模式</string>
+    <string name="audio_mode">音频直播</string>
+    <string name="screen_sharing">屏幕共享</string>
+    <string name="cancel">取消</string>
+    <string name="network_error">网络异常，请检查设备连接情况</string>
+    <string name="start_living">开始直播</string>
+    <string name="user_id">用户ID:</string>
+    <string name="person_surpass">直播模式目前仅支持 4 人同时互动</string>
+    <string name="send_sei">发送SEI数据</string>
+    <string name="receive_sei">收到SEI数据:</string>
+    <string name="resolution_adaptation">分辨率自适应</string>
+    <string name="degradation_disable">关闭</string>
+    <string name="degradation_maintain_framerate">自适应分辨率</string>
+    <string name="degradation_maintain_resolution">自适应帧率</string>
+    <string name="video_parameter">视频参数设置</string>
+    <string name="video_angle">输出视频角度</string>
+    <string name="accompaniment_demo">伴奏演示</string>
+    <string name="external_audio_input">外置音频输入</string>
+    <string name="join_room_setting">请在加入房间前设置</string>
+    <string name="accompaniment_demo_mention">伴奏功能需要先发布音视频之后才能打开</string>
+    <string name="degree0">0 度</string>
+    <string name="degree90">90 度</string>
+    <string name="degree180">180 度</string>
+    <string name="degree270">270 度</string>
+    <string name="send_only">仅发送</string>
+    <string name="playout_only">仅播放</string>
+    <string name="send_and_playout">发送播放</string>
+    <string name="replace_mic">替MIC</string>
+    <string name="replace_mic_and_send_only">替MIC发送</string>
+    <string name="app_name2">App 名称</string>
+    <string name="setting_version">版本</string>
+    <string name="setting_environment">环境</string>
+    <string name="setting_app_environment">App 环境</string>
+    <string name="setting_app_type">App 类型</string>
+    <string name="setting_3a_mode">打开软件3A</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_other">其他</string>
+    <string name="setting_texture">Texture</string>
+
+    <string name="setting_prudtion">正式环境</string>
+    <string name="setting_test">测试环境</string>
+
+    <string name="app_type">App 类型</string>
+    <string name="app_type_china">中国</string>
+    <string name="app_type_international">国际</string>
+
+    <string name="av_environment_setting">音视频环境选择</string>
+    <string name="setting_default_environment">LinkV 默认使用正式环境</string>
+    <string name="setting_default_app_type">LinkV 默认根据用户设置语言选择环境</string>
+    <string name="copy_to_clipboard">已拷贝至剪贴板</string>
+
+    <string name="volume_control_play">播放</string>
+    <string name="volume_control_pause">暂停</string>
+    <string name="setting">设置</string>
+    <string name="volume">音量: </string>
+    <string name="room_list">开播列表</string>
+    <string name="refresh">刷新</string>
+    <string name="enter">进入</string>
+    <string name="resolution">分辨率</string>
+    <string name="fps">帧率</string>
+    <string name="bitrate">码率</string>
+    <string name="ok">确定</string>
+    <string name="error_code">错误码: </string>
+    <string name="try_later">请稍后再试</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="member_limited">通话人数已达上限</string>
+    <string name="me">我</string>
+    <string name="host">主播</string>
+    <string name="uid">用户ID</string>
+    <string name="video_lost">视频丢包</string>
+    <string name="audio_lost">音频丢包</string>
+    <string name="video_bitrate">视频码率</string>
+    <string name="audio_bitrate">音频码率</string>
+    <string name="quality">统计视图</string>
+    <string name="beauty">美颜级别</string>
+    <string name="bright">亮度级别</string>
+    <string name="tone">色调级别</string>
+    <string name="texture_adjust">sdk自适应</string>
+    <string name="texture_on">打开texture</string>
+    <string name="texture_off">关闭texture</string>
+
+</resources>
+
+
+
