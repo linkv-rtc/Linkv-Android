@@ -6,6 +6,13 @@
     android:background="@android:color/transparent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.25dp"
+        android:background="@mipmap/rectangle"
+        android:contentDescription="@null" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -48,8 +55,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp">
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal">
 
             <TextView
                 android:id="@+id/tv_nine_resolution"
@@ -67,7 +74,7 @@
                 android:text=" / "
                 android:textColor="@android:color/white"
                 android:textSize="10sp"
-                android:visibility="gone" />
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/tv_nine_fps"
@@ -79,13 +86,6 @@
         </LinearLayout>
 
     </FrameLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="0.25dp"
-        android:background="@mipmap/rectangle"
-        android:contentDescription="@null" />
 
 
 </FrameLayout>

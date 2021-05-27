@@ -46,6 +46,76 @@
                 android:background="#E1E1E1" />
         </FrameLayout>
 
+        <LinearLayout
+            android:id="@+id/fl_debug_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/fl_debug_server_url"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@android:color/white"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/et_debug_server_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="70dp"
+                    android:hint="输入ip即可"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/et_room_id"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="70dp"
+                android:hint="请输入房间ID，不能有-字符"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/et_uid"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="70dp"
+                android:hint="请输入用户ID，不能有-字符"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="@string/setting_version"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="#E1E1E1" />
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="44dp"
@@ -80,7 +150,6 @@
                 android:layout_marginEnd="16dp"
                 android:background="#E1E1E1" />
         </FrameLayout>
-
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -152,6 +221,23 @@
                 android:background="#E1E1E1" />
         </FrameLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="@string/setting_environment"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:visibility="visible"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="#E1E1E1"
+            android:visibility="visible"/>
+
         <FrameLayout
             android:id="@+id/fl_app_env"
             android:layout_width="match_parent"
@@ -159,15 +245,15 @@
             android:background="@android:color/white"
             android:visibility="visible">
 
-            <ImageView
-                android:id="@+id/iv_env_turn"
-                android:layout_width="40dp"
-                android:layout_height="16dp"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@null"
-                android:paddingStart="20dp"
-                android:src="@mipmap/turn_right" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="@string/setting_app_environment"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_app_env"
@@ -180,15 +266,15 @@
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:text="@string/setting_app_environment"
-                android:textAllCaps="false"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/iv_env_turn"
+                android:layout_width="40dp"
+                android:layout_height="16dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@null"
+                android:paddingStart="20dp"
+                android:src="@mipmap/turn_right" />
 
             <View
                 android:layout_width="match_parent"
@@ -206,15 +292,15 @@
             android:background="@android:color/white"
             android:visibility="visible">
 
-            <ImageView
-                android:id="@+id/iv_language_turn"
-                android:layout_width="40dp"
-                android:layout_height="16dp"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@null"
-                android:paddingStart="20dp"
-                android:src="@mipmap/turn_right" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="@string/app_type"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_language"
@@ -227,15 +313,15 @@
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:text="@string/app_type"
-                android:textAllCaps="false"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/iv_language_turn"
+                android:layout_width="40dp"
+                android:layout_height="16dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@null"
+                android:paddingStart="20dp"
+                android:src="@mipmap/turn_right" />
 
             <View
                 android:layout_width="match_parent"
@@ -250,13 +336,6 @@
             android:background="@android:color/white"
             android:visibility="visible">
 
-            <Switch
-                android:id="@+id/switch_3a_sw"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="16dp" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -267,6 +346,13 @@
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
+            <Switch
+                android:id="@+id/switch_3a_sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="16dp"/>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
@@ -274,22 +360,29 @@
                 android:background="#E1E1E1" />
         </FrameLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="@string/setting_other"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="#E1E1E1"
+            android:visibility="gone"/>
+
         <FrameLayout
             android:id="@+id/fl_texture"
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:background="@android:color/white"
             android:visibility="gone">
-
-            <ImageView
-                android:id="@+id/iv_texture"
-                android:layout_width="40dp"
-                android:layout_height="16dp"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@null"
-                android:paddingStart="20dp"
-                android:src="@mipmap/turn_right" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -301,21 +394,8 @@
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_gravity="bottom"
-                android:background="#E1E1E1" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/fl_app_about"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:background="@android:color/white">
-
             <ImageView
-                android:id="@+id/iv_about"
+                android:id="@+id/iv_texture"
                 android:layout_width="40dp"
                 android:layout_height="16dp"
                 android:layout_gravity="end|center_vertical"
@@ -324,105 +404,12 @@
                 android:paddingStart="20dp"
                 android:src="@mipmap/turn_right" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:text="@string/setting_about"
-                android:textAllCaps="false"
-                android:textColor="#000000"
-                android:textSize="14sp" />
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
                 android:layout_gravity="bottom"
                 android:background="#E1E1E1" />
         </FrameLayout>
-
-        <LinearLayout
-            android:id="@+id/fl_debug_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-            <EditText
-                android:id="@+id/et_room_id"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="70dp"
-                android:hint="请输入房间ID，不能有-字符"
-                android:textAllCaps="false"
-                android:textColor="#000000"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/et_uid"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="70dp"
-                android:hint="请输入用户ID，不能有-字符"
-                android:textAllCaps="false"
-                android:textColor="#000000"
-                android:textSize="14sp" />
-
-
-            <FrameLayout
-                android:id="@+id/fl_debug_server_url"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:background="@android:color/white"
-                android:visibility="visible">
-
-                <EditText
-                    android:id="@+id/et_debug_server_url"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="70dp"
-                    android:hint="输入ip即可"
-                    android:textAllCaps="false"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
-            </FrameLayout>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:layout_marginStart="16dp"
-            android:gravity="center"
-            android:text="@string/setting_version"
-            android:textAllCaps="false"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:layout_marginStart="16dp"
-            android:gravity="center"
-            android:text="@string/setting_environment"
-            android:textAllCaps="false"
-            android:textSize="12sp"
-            android:visibility="visible" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:layout_marginStart="16dp"
-            android:gravity="center"
-            android:text="@string/setting_other"
-            android:textAllCaps="false"
-            android:textSize="12sp"
-            android:visibility="gone" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -439,25 +426,38 @@
             android:layout_gravity="bottom"
             android:background="#E1E1E1" />
 
-        <View
+        <FrameLayout
+            android:id="@+id/fl_app_about"
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_gravity="bottom"
-            android:background="#E1E1E1"
-            android:visibility="visible" />
+            android:layout_height="44dp"
+            android:background="@android:color/white">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_gravity="bottom"
-            android:background="#E1E1E1"
-            android:visibility="gone" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="@string/setting_about"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_gravity="bottom"
-            android:background="#E1E1E1" />
+            <ImageView
+                android:id="@+id/iv_about"
+                android:layout_width="40dp"
+                android:layout_height="16dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@null"
+                android:paddingStart="20dp"
+                android:src="@mipmap/turn_right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="bottom"
+                android:background="#E1E1E1" />
+        </FrameLayout>
 
     </LinearLayout>
 
@@ -467,6 +467,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:visibility="gone">
+
+        <View
+            android:id="@+id/view_env"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
 
         <TextView
             android:id="@+id/tv_online_env"
@@ -478,6 +485,11 @@
             android:textAllCaps="false"
             android:textColor="#ff3f3f3f"
             android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E2E2E2" />
 
         <TextView
             android:id="@+id/tv_test_env"
@@ -495,18 +507,6 @@
             android:layout_height="0.5dp"
             android:background="#E2E2E2" />
 
-        <View
-            android:id="@+id/view_env"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:background="#E2E2E2" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -515,6 +515,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:visibility="gone">
+
+        <View
+            android:id="@+id/view_language"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
 
         <TextView
             android:id="@+id/tv_chinese"
@@ -526,6 +533,11 @@
             android:textAllCaps="false"
             android:textColor="#ff3f3f3f"
             android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E2E2E2" />
 
         <TextView
             android:id="@+id/tv_english"
@@ -543,18 +555,6 @@
             android:layout_height="0.5dp"
             android:background="#E2E2E2" />
 
-        <View
-            android:id="@+id/view_language"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:background="#E2E2E2" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -563,6 +563,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:visibility="gone">
+
+        <View
+            android:id="@+id/view_texture"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
 
         <TextView
             android:id="@+id/tv_texture_adjust"
@@ -575,6 +582,11 @@
             android:textColor="#ff3f3f3f"
             android:textSize="16sp" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E2E2E2" />
+
         <TextView
             android:id="@+id/tv_texture_on"
             android:layout_width="match_parent"
@@ -586,6 +598,11 @@
             android:textColor="#ff3f3f3f"
             android:textSize="16sp" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E2E2E2" />
+
         <TextView
             android:id="@+id/tv_texture_off"
             android:layout_width="match_parent"
@@ -596,23 +613,6 @@
             android:textAllCaps="false"
             android:textColor="#ff3f3f3f"
             android:textSize="16sp" />
-
-        <View
-            android:id="@+id/view_texture"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:background="#E2E2E2" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:background="#E2E2E2" />
 
         <View
             android:layout_width="match_parent"

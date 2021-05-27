@@ -5,6 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <View
+        android:id="@+id/view_output_rotation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
     <TextView
         android:id="@+id/tv_degree0"
         android:layout_width="match_parent"
@@ -14,6 +21,11 @@
         android:text="@string/degree0"
         android:textColor="#ff3f3f3f"
         android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
 
     <TextView
         android:id="@+id/tv_degree90"
@@ -25,6 +37,11 @@
         android:textColor="#ff3f3f3f"
         android:textSize="16sp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
     <TextView
         android:id="@+id/tv_degree180"
         android:layout_width="match_parent"
@@ -34,6 +51,11 @@
         android:text="@string/degree180"
         android:textSize="16sp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
     <TextView
         android:id="@+id/tv_degree270"
         android:layout_width="match_parent"
@@ -42,27 +64,5 @@
         android:gravity="center"
         android:text="@string/degree270"
         android:textSize="16sp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#E2E2E2" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#E2E2E2" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#E2E2E2" />
-
-    <View
-        android:id="@+id/view_output_rotation"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@android:color/transparent" />
 
 </LinearLayout>

@@ -11,19 +11,19 @@
         android:id="@+id/ll_nine_layout_first"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"/>
 
     <LinearLayout
         android:id="@+id/ll_nine_layout_second"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"/>
 
 
     <LinearLayout
         android:id="@+id/ll_nine_layout_third"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"/>
 
 </LinearLayout>

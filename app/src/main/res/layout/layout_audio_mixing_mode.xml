@@ -5,6 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <View
+        android:id="@+id/view_audio_mixing_mode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+
     <TextView
         android:id="@+id/tv_send_only"
         android:layout_width="match_parent"
@@ -14,6 +21,11 @@
         android:text="@string/send_only"
         android:textColor="#ff3f3f3f"
         android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
 
     <TextView
         android:id="@+id/tv_playout_only"
@@ -25,6 +37,11 @@
         android:textColor="#ff3f3f3f"
         android:textSize="16sp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
     <TextView
         android:id="@+id/tv_send_and_playout"
         android:layout_width="match_parent"
@@ -33,6 +50,11 @@
         android:gravity="center"
         android:text="@string/send_and_playout"
         android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
 
     <TextView
         android:id="@+id/tv_replace_mic"
@@ -43,6 +65,11 @@
         android:text="@string/replace_mic"
         android:textSize="16sp" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E2E2E2" />
+
     <TextView
         android:id="@+id/tv_replace_mic_and_send_only"
         android:layout_width="match_parent"
@@ -51,32 +78,5 @@
         android:gravity="center"
         android:text="@string/replace_mic_and_send_only"
         android:textSize="16sp" />
-
-    <View
-        android:id="@+id/view_audio_mixing_mode"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@android:color/transparent" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#E2E2E2" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#E2E2E2" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#E2E2E2" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#E2E2E2" />
 
 </LinearLayout>

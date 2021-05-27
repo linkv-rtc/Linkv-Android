@@ -3,18 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="62dp">
 
-    <Button
-        android:id="@+id/btn_enter_live"
-        android:layout_width="66dp"
-        android:layout_height="30dp"
-        android:layout_gravity="end|center_vertical"
-        android:background="@drawable/shape_btn_enter"
-        android:gravity="center"
-        android:text="@string/enter"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
-
     <TextView
         android:id="@+id/tv_room_id"
         android:layout_width="wrap_content"
@@ -23,6 +11,18 @@
         android:gravity="center"
         android:text="113131312"
         android:textColor="#3F3F3F"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_enter_live"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/shape_btn_enter"
+        android:text="@string/enter"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
         android:textSize="16sp" />
 
     <View
